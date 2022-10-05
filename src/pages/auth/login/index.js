@@ -23,7 +23,6 @@ import {
   ButtonStyled,
 } from "./styles";
 import "react-toastify/dist/ReactToastify.css";
-import "./styles.css";
 import { IMAGE_URL } from "../../../constants";
 function Login() {
   const dispatch = useDispatch();
@@ -167,7 +166,7 @@ function Login() {
       </ChildGrid>
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

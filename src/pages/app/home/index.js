@@ -39,7 +39,7 @@ function Home() {
   return (
     <OuterGrid item>
       {loading ? (
-        <Box style={{ height: "93vh", paddingTop: "35vh" }}>
+        <Box className="boxStyle">
           <CircularProgress />
         </Box>
       ) : (

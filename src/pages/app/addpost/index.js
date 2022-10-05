@@ -40,7 +40,6 @@ function AddPost() {
   };
 
   const checkValidation = () => {
-    console.log(postData);
     if (!postData["title"]) {
       setErrorName("title");
       notify("error", "Title is required");
@@ -57,9 +56,7 @@ function AddPost() {
   const notify = (type, message) => toast[type](message);
 
   const handleChange = (e) => {
-    // if (errorName) {
-    //   setErrorName("");
-    // }
+   
     setpostData({
       ...postData,
       [e.target.name]: e.target.value,
@@ -93,7 +90,7 @@ function AddPost() {
         </ButtonStyled>
       </PaperContainer>
       <ToastContainer
-        position="top-center"
+        position="top-right"
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}

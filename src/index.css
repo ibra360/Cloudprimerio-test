@@ -12,3 +12,21 @@ code {
     monospace;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.imageBox {
+  margin: auto;
+}
+.boxStyle {
+  height: 93vh;
+  padding-top: 35vh;
+}

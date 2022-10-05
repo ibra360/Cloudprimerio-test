@@ -22,7 +22,7 @@ function AppBarComp() {
   };
   return (
     <AppBar position="static">
-      <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+      <Toolbar className="d-flex">
         <AppBarAvatar
           alt="user pic"
           src={user?.profile_pic}
@@ -34,7 +34,7 @@ function AppBarComp() {
           Logo
         </Typography> */}
         <Typography variant="h6">
-          {getObjByKey(URL_NAMES , location?.pathname)}
+          {getObjByKey(URL_NAMES, location?.pathname)}
         </Typography>
         <Button color="inherit" onClick={Logout}>
           Logout
